@@ -3,6 +3,5 @@ Componentes:
 Adrián R. Mendióroz Morales (Coordinador)
 Roberto C. Palenzuela Criado
 
-Título Trabajo:
-Integración Simpson
-Función f(x) = x² cosx, xE[1,3]
+Título Trabajo: Integración polinómica. Metodo Simpson.
+Función: f(x) = x² cos(x), xE[1,3]
