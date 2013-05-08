@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  7 MAY 2013 23:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  8 MAY 2013 23:51
 entering extended mode
  %&-line parsing enabled.
 **memte.tex
@@ -136,44 +136,52 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \algorithmicindent=\skip47
 ) (./templates/multirow.sty
 \bigstrutjot=\dimen110
-) (/usr/share/texmf-texlive/tex/plain/amsfonts/amssym.def
+) (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen111
+))
+(/usr/share/texmf-texlive/tex/plain/amsfonts/amssym.def
 \msafam=\mathgroup4
 \msbfam=\mathgroup5
 \eufmfam=\mathgroup6
 ) (./memte.aux)
 \openout1 = `memte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
 File: images/logotipo-secundario-ULL.eps Graphic file (type eps)
 
 <images/logotipo-secundario-ULL.eps>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <24.88> on input line 109.
+(Font)              <24.88> on input line 110.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 109.
+(Font)              <20.74> on input line 110.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 109.
+(Font)              <17.28> on input line 110.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 111.
+(Font)              <14.4> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 111.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 114.
+(Font)              <10.95> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 114.
+(Font)              <8> on input line 115.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 114.
+(Font)              <6> on input line 115.
  [1
 
 ] [2
@@ -204,42 +212,229 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Cap\'{\i }tulo 1.
-(./tex/cap1.tex) [1
+(./tex/cap1.tex
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
+) [1
 
 ]
 Cap\'{\i }tulo 2.
-(./tex/cap2.tex) [2
+(./tex/cap2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 18--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+File: images/Grafica_Simpson.eps Graphic file (type eps)
+<images/Grafica_Simpson.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+[2
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+
+Underfull \vbox (badness 4492) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--140
+
+ []
+
+[4]) [5]
 Cap\'{\i }tulo 3.
-(./tex/cap3.tex
+(./tex/cap3.tex [6
+
+]
+Overfull \hbox (0.76761pt too wide) in paragraph at lines 78--80
+[]\OT1/cmr/m/n/10.95 Para fi-nalizar el ex-per-i-men-to se re-al-iza una com-pa
+r-a-ti-va de las aprox-i-ma-ciones obtenidas
+ []
+
 File: images/figura1.eps Graphic file (type eps)
- <images/figura1.eps> (./tables/table.tex)) [3
-
-] [4]
+<images/figura1.eps> (./tables/table.tex)) [7] [8]
 Cap\'{\i }tulo 4.
-(./tex/cap4.tex) [5
+(./tex/cap4.tex) [9
 
-] [6
+] [10
 
 ]
 Ap\'{e}ndice A.
-(./tex/apendice1.tex) [7
+(./tex/apendice1.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{verbatim}
+                   
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 52.
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.52 \end{verbatim}
+                   
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.52 \end{verbatim}
+                   
+? 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
 
 ]
-Ap\'{e}ndice B.
-(./tex/apendice2.tex)
+! Missing } inserted.
+<inserted text> 
+                }
+l.52 \end{verbatim}
+                   
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 \end{verbatim}
+                    
+? 
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.100 \end{verbatim}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 \end{verbatim}
+                    
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.100 \end{verbatim}
+                    
+? 
+)
 No file memte.bbl.
-[8
-
-] (./memte.aux) ) 
+[12] (./memte.aux) ) 
 Here is how much of TeX's memory you used:
- 1752 strings out of 495062
- 21279 string characters out of 1182645
- 75798 words of memory out of 3000000
- 4887 multiletter control sequences out of 15000+50000
- 15029 words of font info for 54 fonts, out of 3000000 for 9000
+ 1804 strings out of 495062
+ 21984 string characters out of 1182645
+ 77798 words of memory out of 3000000
+ 4932 multiletter control sequences out of 15000+50000
+ 16247 words of font info for 58 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,8n,27p,208b,288s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,8n,27p,208b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on memte.dvi (16 pages, 11904 bytes).
+Output written on memte.dvi (20 pages, 25416 bytes).

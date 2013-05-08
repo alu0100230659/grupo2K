@@ -2,23 +2,91 @@
 % Chapter 3: Procedimiento experimental 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Este capítulo ha de contar con seccciones para la descripción de los experimentos 
-y del material.
-%
-También debe haber una sección para los resultados obtenidos y una última de 
-análisis de los resultados.
+
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción de los experimentos}
 \label{3:sec:1}
 
-bla, bla, etc. 
+En este apartado se explicará el procedimiento que se ha seguido para la resolución de 
+la integral definida de la función $f(x)=x^{2}\ cos\ x$ en el intervalo acotado $[1,3]$
+utilizando el segundo teorema fundamental del cálculo integral (o Regla de Barrow) para 
+calcular fácilmente el valor de la integral definida a partir de cualquiera de las 
+primitivas de la función.
+
+Una vez obtenido el valor de la integral de la función, se procederá a la aplicación de 
+la Regla de Simpson para obtener una aproximación de dicha integral y comparar así ambos 
+resultados.
+
+\subsection{Cálculo del valor de la integral definida}
+
+A continuación se detallarán los pasos seguidos para obtener el valor exacto de la 
+integral definida.
+
+Se quiere calcular:
+
+\[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
+
+Primero se resuelve la integral indefinida aplicando el método de integración por 
+partes 
+$\left(\int u \text{d}v = uv - \int v \text{d}u\right)$ tal que:
+
+\[ u=x^2, \quad \text{d}u = 2x \text{d}x \]
+\[ \text{d}v = cos\ x \text{d}x, \quad v = sen\ x \]
+
+Con lo que se obtiene:
+
+\[ \int x^2\ cos\ x\ \text{d}x = x^2 sen\ x - \int 2x sen\ x \text{d}x = \]
+
+Empleando de nuevo la integración por partes:
+
+\[ u=2x, \quad \text{d}u = 2 \text{d}x \]
+\[ \text{d}v = sen\ x \text{d}x, \quad v = -cos\ x \]
+
+Se sigue:
+
+\[ = x^2 sen\ x - \left[-2x cos\ x + 2\int cos\ x\ \text{d}x \right] = 
+x^2 sen\ x +2x cos\ x - 2sen\ x = \]
+
+\begin{equation}
+ 2x cos\ x + (x^2 -2)sen\ x
+ \label{ec1}
+\end{equation}
+
+Por último se obtiene el valor buscado a través de la Regla de Barrow en el 
+intervalo $[1,3]$. Para ello se empleará el lenguaje de programación interpretado
+Python, a través de una función que evalúa la expresión ~\ref{ec1}. 
+
+\subsection{Aproximación por la Regla de Simpson}
+
+Para el cálculo de una aproximación de la integral:
+
+\[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
+
+se emplea el lenguaje Python implementando una función que recibe por 
+parámetros la expresión a estudiar y lo extremos del intervalo donde se va a calcular, 
+devolviendo la aproximación buscada. (Ver Apéndice 1).
+
+\subsection{Aproximación por la Regla de Simpson Compuesta}
+
+Para un mejor análisis de los resultados, se repite el estudio aplicando la Regla de 
+Simpson Compuesta, implementando una función en Python que recibe por parámetros la expresión a estudiar. 
+los extremos del intervalo y el número de subintervalos en los que se ha dividido, devolviendo la 
+aproximación buscada. (Ver Apéndice 1)
+
+\subsection{Comparativa de Resultados}
+Para finalizar el experimento se realiza una comparativa de las aproximaciones obtenidas a través de la 
+Regla de Simpson con el valor exacto de la función $f(x)$ objeto de estudio en el intervalo dado.
+
+Como puede verse en el Apéndice 2, se implementa un programa en Python que muestra por pantalla los errores 
+absolutos y relativos de cada experimento.
+
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción del material}
 \label{3:sec:2}
 
-bla, bla, etc. 
+
 
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
