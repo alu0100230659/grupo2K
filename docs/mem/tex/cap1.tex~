@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 1: Motivación y Objetivos 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Como finalidad de la asignatura de Técnicas Experimentales del Grado en Matemáticas 
+se debe saber aplicar conocimientos en el área de las Matemáticas de una forma profesional 
+y poseer las competencias que suelen demostrarse por medio de la elaboración y defensa de 
+argumentos y la resolución de problemas.
+
+%---------------------------------------------------------------------------------
+\section{Objetivo principal}
+\label{1:sec:1}
+  
+Los matemáticos suelen encontrarse con el problema de integrar funciones que no están definidas 
+de forma explícita. Se pueden utilizar métodos gráficos, pero los métodos numéricos son mucho más 
+precisos.\\
+
+El objetivo de este proyecto es investigar sobre el método numérico La Regla de Simpson y aplicarlo
+sobre la función determinada: $f(x)=x^{2}\ cos\ x,\ x \in [1,3]$
