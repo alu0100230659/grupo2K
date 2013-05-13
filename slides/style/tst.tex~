@@ -1,0 +1,274 @@
+\documentclass{beamer}
+%\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newcommand{\beamer}{\textsc{beamer}}
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Integración: Simpson]{Integración: Simpson\\$f(x)=x^{2}\ cos\ x,\ x \in [1,3]$}
+\author[Adrián R. / Roberto C.]{Adrián R. Mendióroz Morales\\Roberto C. Palenzuela Criado}
+\institute[ULL]{Universidad de La Laguna}
+\date[13-05-13]{13 de mayo de 2013}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{pantone254}{RGB}{122,59,122}
+\definecolor{pantone3015}{RGB}{0,88,147}
+\definecolor{pantone432}{RGB}{56,61,66}
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=pantone254}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=pantone3015}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=pantone432}
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=pantone254}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=pantone3015}
+\setbeamercolor*{block title}{bg=pantone3015,fg=white}
+\setbeamercolor*{alerted text}{fg=pantone432}
+\setbeamercolor*{item projected}{fg=pantone254}
+\setbeamercolor*{section in toc shaded}{use=structure,fg=structure.fg}
+\setbeamercolor*{section in toc}{fg=pantone3015}
+\setbeamercolor*{subsection in toc shaded}{fg=pantone3015}
+\setbeamercolor*{subsection in toc}{fg=pantone432}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+  \includegraphics[width=0.15\textwidth]{img/ullesc.eps}
+  \hspace*{7.5cm}
+  \includegraphics[width=0.16\textwidth]{img/fmatesc.eps}
+  \titlepage
+
+  \begin{scriptsize}
+    \begin{center}
+     Facultad de Matemáticas \\
+     Universidad de La Laguna
+    \end{center}
+  \end{scriptsize}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Índice}  
+  \tableofcontents[pausesections]
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Motivación y Objetivos}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Motivación}
+
+\begin{block}
+Aprender a aplicar conocimientos matemáticos de forma profesional en la elaboración y defensa de argumentos y 
+en la resolución de problemas.
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+
+\frametitle{Objetivos}
+
+\begin{block}
+  \begin{itemize}
+  \item
+   Investigar el método numérico de la Regla de Simpson. 
+  \pause
+
+  \item
+   Aplicar la Regla de Simpson a la función $f(x)=x^{2}\ cos\ x$, en el intervalo $[1,3]$.
+
+  \end{itemize}
+
+\end{block}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Fundamentos Teóricos}
+
+\begin{frame}
+\frametitle{Fundamentos Teóricos}
+
+La necesidad de aproximar numéricamente el valor de una integral surge fundamentalmente por dos motivos:
+
+\begin{itemize}
+ \item La dificultad o imposibilidad en el cálculo de una primitiva.
+ \pause
+ 
+ \item La función a integrar sólo se conoce por una tabla de valores.
+\end{itemize}
+
+El problema básico considerado por la integración numérica es calcular una solución
+aproximada a la integral definida:
+\[\int_{a}^{b} f(x)\ \text{d}x \]
+
+Los métodos más comunes de integración numérica son:
+\begin{itemize}
+ \item La regla del Trapecio.
+ \item La regla de Simpson.
+\end{itemize}
+
+\begin{block}{Regla de Simpson}
+ Utilizando una interpolación polinomial de segundo orden que aproxima a la 
+función integrando $f(x)$ entre los puntos a y b, se desea aproximar la integral:
+
+\[ I = \int_{a}^{b} f(x) \text{d}x \]
+
+
+ 
+\end{block}
+
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\section{Procedimiento experimental}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+
+Ha de contar con secciones para la descripción de los experimentos y del material.
+También deber haber una sección para los resultados obtenidos y una última de
+análisis de los resultados obtenidos.
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Descripción de los experimentos}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Generación de datos aleatoria}
+
+\begin{ejemplo}
+  \begin{itemize}
+    \item <1-> Con semilla 1 
+    \item <2-> Con semilla 10 
+    \item <3> Sin semilla 
+  \end{itemize}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Descripción del material}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Hardware y Software}
+
+\begin{ejemplo}
+  \begin{enumerate}
+    \item
+      Descripción del hardware 
+      \pause
+
+    \item
+      Descripción del software 
+  \end{enumerate}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\subsection{Resultados obtenidos}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Medidas de tiempo y Velocidad}
+
+%------------------------------------------------------------------------------
+\input{tables/table.tex}
+%------------------------------------------------------------------------------
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\subsection{Análisis de los resultados}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Diagrama del tiempo y la velocidad}
+
+%------------------------------------------------------------------------------
+\begin{figure}[!th]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{img/figura1.eps}
+\caption{Ejemplo de figura}
+\label{fig:1}
+\end{center}
+\end{figure}
+%------------------------------------------------------------------------------
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+
+\section{Conclusiones}
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+\frametitle{Conclusiones}
+
+\begin{ejemplo}
+  \begin{enumerate}
+    \item
+      Conclusión 1
+      \pause
+    \item
+      Conclusión 2
+  \end{enumerate}
+\end{ejemplo}
+
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}
+  \frametitle{Bibliografía}
+
+  \begin{thebibliography}{10}
+
+    \beamertemplatebookbibitems
+    \bibitem[Plan Estudios, 2011]{plan}  
+    Documento de verificación del grado. 
+    (2011) 
+
+    \beamertemplatebookbibitems
+    \bibitem[Guía Docente, 2013]{guia}  
+    Guía docente. 
+    (2013) 
+    {\small $http://eguia.ull.es/matematicas/query.php?codigo=299341201$}
+
+    \beamertemplatebookbibitems
+    \bibitem[URL: CTAN]{latex} 
+    CTAN. {\small $http://www.ctan.org/$}
+
+    \beamertemplatebookbibitems
+    \bibitem[Tantau, 2005]{beamer} 
+    Tantau, Till. 
+    \emph{User's Guide to the \beamer{} Class, Version 3.06, 2005} 
+    {\small $http://ctang.tug.org/tex-archive/macros/latex/contrib/beamer$}
+
+
+  \end{thebibliography}
+\end{frame}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+
+\end{document}

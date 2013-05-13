@@ -1,5 +1,5 @@
-\section{Modulo Simpson}
-\label{Apendice1:Simpson}
+\section{Grafica}
+\label{Apendice1:grafica}
 
 \begin{center}
 \begin{footnotesize}
@@ -24,7 +24,7 @@
 #      Salida:
 #         Aproximacion de la integral de f en [a,b]
 # 
-#   regla_simpson_compuesta: Calcula una aproximacion a la integral de una función en un 
+#   regla_simpson_compuesta: Calcula una aproximacion a la integral de una funcion en un 
 #                            intervalo [a,b], empleando n subintervalos y aplicando la 
 #                            regla de Simpson compuesta.
 #      Entrada:
@@ -38,17 +38,37 @@
 # Fecha de creacion: 06 de mayo de 2013
 ###################################################################################
 
-from math import *
+from math import cos
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MultipleLocator, FormatStrFormatter
+import numpy as np
+from matplotlib.pylab import *
 
-def regla_simpson(f,a,b):
-  return (b-a)/6.0*(f(a)+4*f((a+b)/2.0)+f(b))
-  
-def regla_simpson_compuesta(f,a,b,n):
-  h=(b-a)/float(n)
-  aprox=0
-  for l in range(0,n):
-    aprox+=regla_simpson(lambda x:(x**2*cos(x)),a+l*h,a+(l+1)*h)
-  return aprox
+def f(t):
+  return t**2*cos(t)
+
+t = linspace(-1, 3.5, 51)  # 51 puntos entre 0 y 3
+y = zeros(len(t))       # reserva memoria para y con elementos flotantes
+for i in xrange(len(t)):
+  y[i] = f(t[i])
+
+fig = plt.figure(1)
+ax = fig.add_subplot(111) 
+# set up axis
+ax.spines['left'].set_position('zero')
+ax.spines['right'].set_color('none')
+ax.spines['bottom'].set_position('zero')
+ax.spines['top'].set_color('none')
+ax.xaxis.set_ticks_position('bottom')
+ax.yaxis.set_ticks_position('left')
+ 
+plot(t,y)
+xlabel('x')
+ylabel('y')
+legend(['f(x)=x^2*cos(x)'],'best')
+axis([-1,3.5, -10, 2])  #[tmin, tmax, ymin, ymax]
+savefig('grafica.eps')
+show()
 \end{verbatim}
 \end{footnotesize}
 \end{center}
@@ -57,15 +77,15 @@ def regla_simpson_compuesta(f,a,b,n):
 \label{Apendice1:error}
 
 \begin{center}
-  \begin{footnotesize}
-    \begin{verbatim}
-      #! /usr/bin/python
-      ###################################################################################
-      # Fichero: uso_simpson.py
-      ###################################################################################
-      #
+\begin{footnotesize}
+\begin{verbatim}
+#! /usr/bin/python
+###################################################################################
+# Fichero: uso_simpson.py
+###################################################################################
+#
 # Contenido: Comprobacion de los errores cometidos al aplicar la regla de Simpson
-#            simple y compuesta a la función f(x)=x**2*cos(x), en el intervalo
+#            simple y compuesta a la funcion f(x)=x**2*cos(x), en el intervalo
 #            [a,b].
 #
 # Autor/es: Adrian R. Mendioroz Morales

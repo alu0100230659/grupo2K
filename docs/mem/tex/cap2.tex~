@@ -4,38 +4,43 @@
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-La integración numérica consiste en encontrar una buena aproximación al área bajo la 
-curva que representa una función $f(x)$, que ha sido determinada a partir de datos 
-experimentales o a partir de una expresión matemática.
-
-Los métodos más comunes de integración numérica son:
+La necesidad de aproximar numéricamente el valor de una integral surge fundamentalmente por dos motivos:
 
 \begin{itemize}
- \item La Regla del Trapecio.
- \item La Regla de Simpson.
+ \item La dificultad o imposibilidad en el cálculo de una primitiva.
+ \item La función a integrar sólo se conoce por una tabla de valores.
 \end{itemize}
 
-Son conocidas como Fórmulas de Cuadratura de Newton-Cotes, y consisten en 
-reemplazar una función complicada con una función aproximada que sea más 
-sencilla de integrar.
-
-\section{Integración Numérica. Regla de Simpson.}
+\section{Integración Numérica.}
 \label{2:sec:1}
 
+La integración numérica constituye una amplia gama de algoritmos para calcular
+el valor numérico de una integral definida y, por extensión, el término se usa a 
+veces para describir algoritmos numéricos para resolver ecuaciones diferenciales.
+El problema básico considerado por la integración numérica es calcular una solución
+aproximada a la integral definida:
+\[\int_{a}^{b} f(x)\ \text{d}x \]
+Los métodos más comunes de integración numérica son:
+\begin{itemize}
+ \item La regla del Trapecio.
+ \item La regla de Simpson.
+\end{itemize}
+
+\section{Regla de Simpson}
+\label{2:sec:2}
 Una forma de obtener una aproximación adecuada de una integral es usar polinomios de grado superior
 para unir los puntos y aproximar la función real.
 
-El método de Simpson, a diferencia de la Regla del Trapecio, intenta no recurrir en un mayor número 
+El método de Simpson, a diferencia de la Regla del Trapecio, intenta no recurrir a un mayor número 
 de subdivisiones; se trata de ajustar una curva de orden superior en lugar de una línea recta como 
 en la Regla del Trapecio.
 
 La metodología será la siguiente: Sea una función $f(x)$, si $f(a) \ne f(b)$ entonces existe un punto 
-intermedio $f(c)$ por el que se puede ajustar una parábola que una $f(a)$ y $f(b)$.\\
+intermedio $f(c)$ por el que se puede ajustar una parábola que una $f(a)$ y $f(b)$.
 
-En la FIGURA 1 se muestra la representación gráfica de la función real $f(x)$ y la parábola que 
-aproxima a dicha función entre $f(a)$ y $f(b)$. La integral que se desea calcular es el área bajo 
-la parábola que une los puntos. La Regla de Simpson no es más que las fórmulas resultantes de 
-tomar integrales bajo estos polinomios.
+En la figura~\ref{Grafica_Simpson} se muestra la representación gráfica de una función real $f(x)$ 
+y el polinomio de grado dos $P_2(x)$, que aproxima dicha función en un intervalo determinado.
+La regla de Simpson no es más que la fórmula resultante de tomar integrales bajo este polinomio.
 
 \begin{figure}[ht]
   \centering
@@ -44,98 +49,122 @@ tomar integrales bajo estos polinomios.
   \label{Grafica_Simpson}
 \end{figure}
 
-\section{Regla de Simpson}
-\label{2:sec:2}
 Utilizando una interpolación polinomial de segundo orden que aproxima a la 
 función integrando $f(x)$ entre los puntos a y b, se desea aproximar la integral:
 
-FORMULA 1
+\[ I = \int_{a}^{b} f(x) \text{d}x \]
 
 La interpolación polinomial que se busca es un polinomio de Lagrange de orden 2,
-$P_{2}(x)$, tal que, siendo FORMULA 3
+$P_{2}(x)$, tal que, siendo $c=\frac{a+b}{2}$
 
-FORMULA 4
+\[ P_{2}(x)= \frac{(x-c)(x-b)}{(a-c)(a-b)}f(a) + \frac{(x-a)(x-b)}{c-a)(c-b)}f(c) + 
+\frac{(x-a)(x-c)}{(b-a)(b-c)}f(b) \]
 
 Sustituyendo en la integral que se quiere calcular, se obtiene:
 
-FORMULA 5
+\[ I = \int_{a}^{b} f(x) \text{d}x \approx \int_{a}^{b} P_{2}(x) \text{d}x \] 
+\[ \int_{a}^{b} \left[\frac{(x-c)(x-b)}{(a-c)(a-b)}f(a) + 
+\frac{(x-a)(x-b)}{(c-a)(c-b)}f(c) + \frac{(x-a)(x-c)}{(b-a)(b-c)}f(b)\right] \text{d}x = \] 
+\[ f(a)\int_{a}^{b} \frac{(x-c)(x-b)}{(a-c)(a-b)} \text{d}x + 
+f(c)\int_{a}^{b} \frac{(x-a)(x-b)}{(c-a)(c-b)} \text{d}x + 
+f(b)\int_{a}^{b} \frac{(x-a)(x-c)}{(b-a)(b-c)} \text{d}x \]
 
-Se toma:
+Se toma: $ h = \frac{b-a}{2}, \quad c = \frac{a+b}{2} $
 
-FORMULA 6
-
-Se despeja b de forma que:
-
-FORMULA 7
+Se despeja b de forma que: 
+\[ h = \frac{b-a}{2} \Rightarrow b = a+2h \]
 
 Se sustituye la expresión $(a-c)(a-b)$ de la siguiente forma:
 
-FORMULA 8
+\[ h = \frac{b-a}{2} \Rightarrow a-b = -2h \]
+\[ (a-b)(a-c) = -2h(a-c) \]
+\[ (a-b)(a-c) = -2h(b-2h-c) \]
+\[ (a-b)(a-c) = -2h\left(b-2h-\frac{a+b}{2}\right) \]
+\[ (a-b)(a-c) = -2h\left(\frac{b-a}{2}-2h\right) \]
+\[ (a-b)(a-c) = -2h(h-2h) \]
+\[ (a-b)(a-c) = -h^2 \]
 
 Obteniéndose así que:
 
-FORMULA 9
+\[ \int_{a}^{b} \frac{(x-c)(x-b)}{(a-c)(a-b)} \text{d}x = 
+\frac{1}{2h^2} \int_{a}^{a+2h} (x-c)(x-b) \text{d}x \]
 
 Realizando un cambio de variable tal que $u=x-a$:
 
-FORMULA 10
+\[ (x-c) = x-a+a-c = u+a-c \]
+\[ (x-c) = u+a-\frac{a+b}{2} \]
+\[ (x-c) = u+\frac{a-b}{2} \]
+\[ (x-c) = u-h \]
 
 De la misma forma:
 
-FORMULA 11
+\[ (x-b) = x-a+a-b = u+a-b \]
+\[ (x-b) = u-2\frac{b-a}{2} \]
+\[ (x-b) = u-2h \]
 
 De lo que se obtiene que:
 
-FORMULA 12
+\[ \int_{a}^{b}\frac{(x-c)(x-b)}{(a-c)(a-b)} \text{d}x = 
+\frac{1}{h^2}\int_{a}^{a+2h}(x-c)(x-b) \text{d}x = 
+\frac{1}{2h^2}\int_{0}^{2h}(u-h)(u-2h) \text{d}u = \frac{h}{3} \]
 
 Análogamente se deduce que:
 
-FORMULA 13
+\[ \int_{a}^{b}\frac{(x-a)(x-b)}{(c-a)(c-b)} \text{d}x = \frac{4h}{3} \quad ; \quad 
+\int_{a}^{b}\frac{(x-a)(x-c)}{(b-a)(b-c)} \text{d}x = \frac{h}{3} \]
 
 Por tanto, se tiene que:
 
-FORMULA 14
+\[ I = \int_{a}^{b} f(x) \text{d}x \approx \frac{h}{3}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right] \]
 
-Recordando que la expresión FORMULA 15 , la expresión anterior se puede expresar como:
+Recordando que la expresión $h = \frac{b-a}{2}$ , la expresión anterior se puede expresar como:
 
-FORMULA 16
+\begin{equation}
+ \int_{a}^{b} f(x) \text{d}x \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right]
+ \label{simpson}
+\end{equation}
 
-A esta ecuación se le conoce como Regla de Simpson, y al aproximar tiene un error 
-asociado tal que:
+A la ecuacion~\ref{simpson} se le conoce como ``La regla de Simpson''.
 
-FORMULA 17
+El término de error asociado es
 
-Donde FORMULA 18 y $\xi$ pertenece al intervalo $[a,b]$.
+\[ -\frac{1}{90}(b-a)^5f^{(4)}(\xi), \]
+
+para algún $\xi \in (a,b)$.
 
 Se observa que el error es proporcional a la cuarta derivada, de lo que se sigue 
 que el método de Simpson obtiene soluciones exactas para ecuaciones de tercer grado 
 o inferior.
 
-\section{Regla de Simpson Compuesta}
+\section{Regla de Simpson compuesta}
 \label{2:sec:3}
 
-En casos donde la Regla de Simpson devuelva un error elevado debido a la excesiva 
-amplitud del intervalo $[a,b]$, se utiliza una variación de la Regla de Simpson conocida 
-como Regla de Simpson compuesta, que consiste en dividir el intervalo $[a,b]$ en n (par) 
-subintervalos iguales de longitud FORMULA 19 , de tal manera que:
+En casos donde la regla de Simpson devuelva un error elevado debido a la excesiva 
+amplitud del intervalo $[a,b]$, se utiliza una variación de la regla de Simpson conocida 
+como regla de Simpson compuesta, que consiste en dividir el intervalo $[a,b]$ en un número par ``n'' de 
+subintervalos iguales de longitud $h = \frac{b-a}{n}$, entonces:
 
-FORMULA 20
-
-Dividiendo la integral en n subintervalos:
-
-FORMULA 21
+\[ \int_{a}^{b}f(x) \text{d}x = \int_{a}^{a+h}f(x) \text{d}x + \int_{a+h}^{a+2h}f(x) \text{d}x + \ldots + 
+\int_{a+(n-1)h}^{b}f(x) \text{d}x \]
 
 Aplicando la Regla de Simpson a cada subintervalo $(x_i=a+ih ; i=0,1,2,\ldots,n)$ se sigue 
 que, para cada $[x_{j-1},x_{j+1}]$ donde $j=1,3,5,\ldots,n-1$, se obtiene que:
 
-FORMULA 22
+\[ \int_{x_{j-1}}^{x_{j+1}}f(x) \text{d}x = \frac{x_{j+1}-x_{j-1}}{3}\left[f(x_{j-1}) + 
+4f(x_j) + f(x_{j+1})\right] \]
 
-Con lo que, recordando que FORMULA 23 , la suma de las integrales de todos los 
-subintervalos da como resultado:
+Con lo que, la suma de las integrales de todos los subintervalos da como resultado:
 
-FORMULA 24
+\begin{equation}
+  \int_{a}^{b}f(x) \text{d}x \approx \frac{h}{3}\left[f(x_0) + 2\sum_{j=1}^{\frac{n}{2}-1} f(x_{2j}) + 
+  4\sum_{j=1}^{\frac{n}{2}} f(x_{2j-1}) + f(x_n)\right] 
+ \label{simpson_compuesta}
+\end{equation}
 
-Ecuación a la que se conoce como Regla de Simpson Compuesta, cuyo error se puede 
-acotar tal que:
+La ecuación~\ref{simpson_compuesta} se conoce como ``la regla de Simpson compuesta''.
 
-FORMULA 25
+El término de error para esta fórmula es
+
+\[ -\frac{1}{180}(b-a)h^4f^{(4)}(\xi) \]
+
+para algún $\xi \in (a,b)$.

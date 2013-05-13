@@ -1,0 +1,19 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter 4: Conclusiones y Trabajos Futuros 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+  \item La integraci\'on num\'erica permite el c\'alculo del valor de la integral 
+  definida en el caso de funciones muy complejas.
+  \item La Regla de Simpson simplifica el c\'alculo de una integral definida 
+  compleja, aproximando su valor al de la integral de un polinomio de segundo 
+  grado.
+  \item La Regla de Simpson es m\'as precisa que otros m\'etodos como la Regla del 
+  Trapecio a la hora de aproximar la integral.
+  \item La Regla de Simpson proporciona aproximaciones exactas para polinomios 
+  de tercer grado.
+  \item La Regla de Simpson Compuesta proporciona aproximaciones m\'as precisas 
+  que la Regla de Simpson.
+  \item En la Regla de Simpson Compuesta, el error es directamente proporcional 
+  al intervalo de integraci\'on.
+\end{itemize}

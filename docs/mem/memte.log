@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  10 MAY 2013 16:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  13 MAY 2013 10:09
 entering extended mode
  %&-line parsing enabled.
 **memte.tex
@@ -212,73 +212,52 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Cap\'{\i }tulo 1.
-(./tex/cap1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-) [1
+(./tex/cap1.tex) [1
 
 ]
 Cap\'{\i }tulo 2.
-(./tex/cap2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 32--34
+(./tex/cap2.tex [2
 
- []
-
+]
 File: images/Grafica_Simpson.eps Graphic file (type eps)
-<images/Grafica_Simpson.eps>
-Underfull \vbox (badness 3158) has occurred while \output is active []
-
- [2
-
-]
-Underfull \vbox (badness 4492) has occurred while \output is active []
-
- [3])
-[4]
+ <images/Grafica_Simpson.eps> [3] [4]) [5]
 Cap\'{\i }tulo 3.
-(./tex/cap3.tex [5
-
-]
-Overfull \hbox (0.76761pt too wide) in paragraph at lines 78--80
-[]\OT1/cmr/m/n/10.95 Para fi-nalizar el ex-per-i-men-to se re-al-iza una com-pa
-r-a-ti-va de las aprox-i-ma-ciones obtenidas
- []
-
-[6]
-File: images/figura1.eps Graphic file (type eps)
- <images/figura1.eps> (./tables/table1.tex) (./tables/table2.tex
+(./tex/cap3.tex
+File: images/grafica1.eps Graphic file (type eps)
+ <images/grafica1.eps>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)) [7] [8]
-Cap\'{\i }tulo 4.
-(./tex/cap4.tex) [9
+[6
 
-] [10
+] [7]
+File: images/grafica2.eps Graphic file (type eps)
+ <images/grafica2.eps> [8] (./tables/table1.tex [9])
+(./tables/table2.tex)) [10]
+Cap\'{\i }tulo 4.
+(./tex/cap4.tex) [11
+
+] [12
 
 ]
 Ap\'{e}ndice A.
 (./tex/apendice1.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [13
 
-])
-No file memte.bbl.
-[12] (./memte.aux)
+]
+[14]) (./tex/apendice2.tex) (./tex/apendice3.tex [15] [16]) (./memte.bbl
+[17]) [18
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./memte.aux) ) 
 Here is how much of TeX's memory you used:
- 1802 strings out of 495062
- 21967 string characters out of 1182645
- 76798 words of memory out of 3000000
- 4928 multiletter control sequences out of 15000+50000
- 15634 words of font info for 56 fonts, out of 3000000 for 9000
+ 1837 strings out of 495062
+ 22473 string characters out of 1182645
+ 78798 words of memory out of 3000000
+ 4953 multiletter control sequences out of 15000+50000
+ 15986 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,7n,27p,208b,371s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,8n,27p,208b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on memte.dvi (20 pages, 26928 bytes).
+Output written on memte.dvi (26 pages, 44616 bytes).

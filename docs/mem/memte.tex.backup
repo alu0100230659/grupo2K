@@ -199,7 +199,8 @@
 \label{appendix:1}
 
 \input{tex/apendice1.tex}
-
+\input{tex/apendice2.tex}
+\input{tex/apendice3.tex}
 \end{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -207,7 +208,7 @@
 \bibliographystyle{plain}
 
 
-\bibliography{bib/references}
+\bibliography{bib/references.bib}
 \nocite{*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,28 @@
+@Book{Lamport:LDP94,
+    author =    "Leslie Lamport" ,
+     title =     "\LaTeX: A Document Preparation System." ,
+     publisher = "Addison--Wesley Pub.\ Co." ,
+     year =      "1986" ,
+     address =   "Reading, MA" 
+}
+
+@Book{LinoAurea:2005,
+  title =   "Lecciones de M\'etodos Num\'ericos.",
+  author =  "Lino J. Alvarez Vazquez, Aurea M. Martinez Varela",
+  isbn =    "8493366234",
+  year =    "2005"
+}
+
+@Book{KincaidCheney:gopen:1990,
+  title =      "An\'alisis Num\'erico. Las matem\'aticas del c\'alculo cient\'ifico.",
+  author =     "David Kincaid, Ward Cheney",
+  publisher =  "Addison-Wesley Iberoamericana",
+  isbn =       "0201601303",
+  year =       "1994"
+}
+
+@MISC{URL:XML,
+   author    = "ACM LaTeX Style",
+   note      = {http://www.acm.org/publications/latex\_style/}
+}
+

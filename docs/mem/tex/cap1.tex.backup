@@ -2,23 +2,18 @@
 % Chapter 1: Motivación y Objetivos 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Los objetivos le dan al lector las razones por las que se realizó el
-proyecto o trabajo de investigación.
+Como finalidad de la asignatura de Técnicas Experimentales del Grado en Matemáticas 
+se debe saber aplicar conocimientos en el área de las Matemáticas de una forma profesional 
+y poseer las competencias que suelen demostrarse por medio de la elaboración y defensa de 
+argumentos y la resolución de problemas.
 
 %---------------------------------------------------------------------------------
-\section{Sección Uno}
+\section{Objetivo principal}
 \label{1:sec:1}
-  Primer párrafo de la primera sección.
+  
+Los matemáticos suelen encontrarse con el problema de integrar funciones que no están definidas 
+de forma explícita. Se pueden utilizar métodos gráficos, pero los métodos numéricos son mucho más 
+precisos.
 
-
-%---------------------------------------------------------------------------------
-\section{Sección Dos}
-\label{1:sec:2}
-  Primer párrafo de la segunda sección.
-
-\begin{itemize}
-  \item Item 1
-  \item Item 2
-  \item Item 3
-\end{itemize}
-
+El objetivo de este proyecto es investigar sobre el método numérico La Regla de Simpson y aplicarlo
+sobre la función determinada: $f(x)=x^{2}\ cos\ x,\ x \in [1,3]$
