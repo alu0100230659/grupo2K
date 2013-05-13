@@ -71,7 +71,7 @@
 
 \frametitle{Motivación}
 
-\begin{block}
+\begin{block}{}
 Aprender a aplicar conocimientos matemáticos de forma profesional en la elaboración y defensa de argumentos y 
 en la resolución de problemas.
 \end{block}
@@ -84,12 +84,10 @@ en la resolución de problemas.
 
 \frametitle{Objetivos}
 
-\begin{block}
+\begin{block}{}
   \begin{itemize}
   \item
    Investigar el método numérico de la Regla de Simpson. 
-  \pause
-
   \item
    Aplicar la Regla de Simpson a la función $f(x)=x^{2}\ cos\ x$, en el intervalo $[1,3]$.
 
@@ -103,30 +101,57 @@ en la resolución de problemas.
 \section{Fundamentos Teóricos}
 
 \begin{frame}
-\frametitle{Fundamentos Teóricos}
+  \frametitle{Fundamentos Teóricos}
+  La necesidad de aproximar numéricamente el valor de una integral surge fundamentalmente por dos motivos:
+  \begin{itemize}
+    \item La dificultad o imposibilidad en el cálculo de una primitiva.
+    \item La función a integrar sólo se conoce por una tabla de valores.
+  \end{itemize}
+  
+  El problema básico considerado por la integración numérica es calcular una solución
+  aproximada a la integral definida:
+  \[\int_{a}^{b} f(x)\ \text{d}x \]
+  Los métodos más comunes de integración numérica son:
+  \begin{itemize}
+    \item La regla del Trapecio.
+    \item La regla de Simpson.
+  \end{itemize}
+  
+\end{frame}
 
-La necesidad de aproximar numéricamente el valor de una integral surge fundamentalmente por dos motivos:
-
-\begin{itemize}
- \item La dificultad o imposibilidad en el cálculo de una primitiva.
- \pause
+\begin{frame}
+  \frametitle{Fundamentos Teóricos}
+  \begin{block}{Regla de Simpson}
+    Se desea aproximar la integral:
+    \[ I = \int_{a}^{b} f(x) \text{d}x \]
+  \begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.50\textwidth]{img/Grafica_Simpson.eps}
+  \caption{Descripción gráfica de la regla de Simpson}
+  \label{Grafica_Simpson}
+  \end{figure}
+  
+  \end{block}
  
- \item La función a integrar sólo se conoce por una tabla de valores.
-\end{itemize}
+\end{frame}
 
-El problema básico considerado por la integración numérica es calcular una solución
-aproximada a la integral definida:
-\[\int_{a}^{b} f(x)\ \text{d}x \]
+\begin{frame}
+  \frametitle{Fundamentos Teóricos}
+  \begin{block}{Regla de Simpson}
+  \[ \int_{a}^{b} f(x) \text{d}x \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right] \]
+  Error asociado:
+  \[ -\frac{1}{90}(b-a)^5f^{(4)}(\xi), \quad \xi \in (a,b) \]
+  \end{block}
+\end{frame}
 
-Los métodos más comunes de integración numérica son:
-\begin{itemize}
- \item La regla del Trapecio.
- \item La regla de Simpson.
-\end{itemize}
-
-
-
-
+\begin{frame}
+  \frametitle{Fundamentos Teóricos}
+  \begin{block}{Regla de Simpson Compuesta}
+  \[ \int_{a}^{b}f(x) \text{d}x \approx \frac{h}{3}\left[f(x_0) + 2\sum_{j=1}^{\frac{n}{2}-1} f(x_{2j}) + 
+  4\sum_{j=1}^{\frac{n}{2}} f(x_{2j-1}) + f(x_n)\right] \]
+  Error asociado:
+    \[ -\frac{1}{180}(b-a)h^4f^{(4)}(\xi), \quad \xi \in (a,b) \]
+  \end{block}
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
@@ -135,9 +160,7 @@ Los métodos más comunes de integración numérica son:
 \begin{frame}
 \frametitle{Procedimiento experimental}
 
-Ha de contar con secciones para la descripción de los experimentos y del material.
-También deber haber una sección para los resultados obtenidos y una última de
-análisis de los resultados obtenidos.
+\[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
@@ -146,16 +169,131 @@ análisis de los resultados obtenidos.
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Generación de datos aleatoria}
+\frametitle{Procedimiento experimental}
 
-\begin{ejemplo}
+\begin{block}{Descripción de los experimentos}
   \begin{itemize}
-    \item <1-> Con semilla 1 
-    \item <2-> Con semilla 10 
-    \item <3> Sin semilla 
+    \item <1-> Representación gráfica de la función.
+    \pause
+    \item <2-> Cálculo del valor exacto de la integral definida.
+    \pause  
+    \item <3-> Comparación grafica.
+    \pause
+    \item <4-> Aproximación por la Regla de Simpson.
+    \pause
+    \item <5-> Aproximación por la Regla de Simpson compuesta.
+    
   \end{itemize}
-\end{ejemplo}
+\end{block}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+  \begin{block}{Representación gráfica de la función}
+  \begin{figure}[ht]
+   \centering
+   \includegraphics[width=0.75\textwidth]{img/grafica1.eps}
+   \caption{Representación gráfica de la función a integrar.}
+   \end{figure}
+   \end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+  \begin{block}{Cálculo del valor exacto de la integral definida}
+
+  \[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
+  \[ \int x^2\ cos\ x\ \text{d}x = x^2 sen\ x - \int 2x sen\ x\ \text{d}x = \]
+  \[ = x^2 sen\ x - \left[-2x cos\ x + 2\int cos\ x\ \text{d}x \right] = 
+  x^2 sen\ x +2x cos\ x - 2sen\ x = \]
+  \[ 2x cos\ x + (x^2 -2)sen\ x \]
+
+  \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+  \begin{block}{Comparación Gráfica}
+
+  \begin{figure}[h]
+    \begin{center}
+      \includegraphics[width=0.75\textwidth]{img/grafica2.eps}
+      \caption{Funcion vs. Polinomio interpolador}
+      \label{grafica2}
+    \end{center}
+  \end{figure}
+  \end{block}
+ 
+\end{frame}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+  \begin{block}{Aproximación por la Regla de Simpson}
+  \begin{itemize}
+   \item Módulo:
+   \begin{verbatim}
+   from math import *
+   def regla_simpson(f,a,b):
+     return (b-a)/6.0*(f(a)+4*f((a+b)/2.0)+f(b))
+  \end{verbatim}
+  \item Programa Principal:
+  \begin{verbatim}
+    from simpson import regla_simpson
+    from math import *
+
+    if __name__ == '__main__':
+  
+      F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+      print '\nValor real= ',F
+
+      aprox=regla_simpson(lambda x:(x**2*cos(x)),1,3)
+      print '\nAproximacion por la regla de Simpson: ',aprox
+
+  \end{verbatim}
+  \end{itemize}
+
+  \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Procedimiento experimental}
+  \begin{block}{Aproximación por la Regla de Simpson Compuesta}
+  \begin{itemize}
+   \item Módulo:
+   \begin{verbatim}
+   def regla_simpson_compuesta(f,a,b,n):
+     h=(b-a)/float(n)
+     aprox=0
+     for l in range(0,n):
+       aprox+=regla_simpson(lambda x:(x**2*cos(x)),a+l*h,a+(l+1)*h)
+     return aprox
+  \end{verbatim}
+  \item Programa Principal:
+  \begin{verbatim}
+    from simpson import regla_simpson_compuesta
+    from math import *
+
+    F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+    print '\nValor real= ',F
+
+    print '\nAproximacion por la regla de Simpson compuesta: '
+    print '%25s %15s %15s %15s' % ('Numero de subintervalos','Aproximacion',
+    'Error absoluto','Error relativo')
+    n=[2,6,10,50,100]
+    aprox=0
+    i=0
+    for l in n:
+      aprox=regla_simpson_compuesta(lambda x:(x**2*cos(x)),1,3,l)
+      print '%16d %24.10f %15.10f %15.10f' %(n[i],aprox,abs(F-aprox),
+      abs(F-aprox)/abs(F))
+      i=i+1
+
+  \end{verbatim}
+  \end{itemize}
+
+  \end{block}
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 

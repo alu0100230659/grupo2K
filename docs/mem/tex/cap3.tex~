@@ -37,7 +37,7 @@ Se implementa en Python un programa que representa la gráfica de la función
 como se puede ver en el apéndice~\ref{Apendice1:grafica1}, obteniendo como 
 resultado la figura~\ref{grafica1}.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{images/grafica1.eps}
     \caption{Representación gráfica de la función a integrar.}

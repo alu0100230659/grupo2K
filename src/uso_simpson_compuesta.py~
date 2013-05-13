@@ -4,9 +4,9 @@
 #                                                                     #
 # Modulo: simpson                                                     #
 #                                                                     #
-# Contenido: Comprobacion del error cometido al aplicar la regla      #
-#            de Simpson al calculo de la integral de  la funcion      #
-#            f(x)=x**2*cos(x), en el intervalo [a,b].                 #
+# Contenido: Comprobacion de los errores cometidos al aplicar la      #
+#            regla de Simpson compuesta al calculo de la integral     #
+#            de la funcion f(x)=x**2*cos(x), en el intervalo [a,b].   #
 #                                                                     #
 # Autor/es: Adrian R. Mendioroz Morales                               #
 #           Roberto C. Palenzuela Criado                              #

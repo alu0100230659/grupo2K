@@ -37,7 +37,7 @@ Se implementa en Python un programa que representa la gráfica de la función
 como se puede ver en el apéndice~\ref{Apendice1:grafica1}, obteniendo como 
 resultado la figura~\ref{grafica1}.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{images/grafica1.eps}
     \caption{Representación gráfica de la función a integrar.}
@@ -163,7 +163,13 @@ Los ficheros en lenguaje Python fueron realizados con el editor de textos avanza
 \section{Análisis de los resultados}
 \label{3:sec:4}
 
-Como se puede apreciar en la tabla~\ref{tab:1}, el error cometido al emplear la regla de Simpson,
+%------------------------------------------------------------------------------
+\input{tables/table3.tex}
+%------------------------------------------------------------------------------
+\input{tables/table4.tex}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Como se puede apreciar en la tabla~\ref{tab:3}, el error cometido al aplicar la regla de Simpson,
 garantiza, para la función estudiada, una precisión de por lo menos una cifra decimal exacta.
-Por otro lado, se puede observar, que empleando la regla de Simpson compuesta el error es 
-inversamente proporcional al número de intervalos, siendo posible reducirlo tanto como se desee.
+Por otro lado, se puede observar en la tabla~\ref{tab:4}, que empleando la regla de Simpson compuesta el error es 
+inversamente proporcional al número de subintervalos, siendo posible reducirlo tanto como se desee.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  13 MAY 2013 10:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  13 MAY 2013 13:34
 entering extended mode
  %&-line parsing enabled.
 **tst.tex
@@ -1072,9 +1072,9 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-)
-No file tst.nav.
+) (./tst.nav)
 File: img/ullesc.eps Graphic file (type eps)
+
 <img/ullesc.eps>
 File: img/fmatesc.eps Graphic file (type eps)
  <img/fmatesc.eps>
@@ -1094,28 +1094,150 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 [1
 
-]
-No file tst.toc.
-[2
+] (./tst.toc) [2
 
-] [3
+] (./tst.toc) [3
+
+] (./tst.toc) [4
+
+] (./tst.toc) [5
+
+] [6
 
 ]
-! TeX capacity exceeded, sorry [input stack size=5000].
-\end #1->\csname end#1
-                      \endcsname \@checkend {#1}\expandafter \endgroup \if@e...
-l.99 \end{frame}
-                
+[7
+
+] [8
+
+]
+File: img/Grafica_Simpson.eps Graphic file (type eps)
+ <img/Grafica_Simpson.eps> [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+]
+[17
+
+]
+File: img/grafica1.eps Graphic file (type eps)
+ <img/grafica1.eps>
+Overfull \vbox (25.69641pt too high) detected at line 201
+ []
+
+[18
+
+] [19
+
+]
+File: img/grafica2.eps Graphic file (type eps)
+ <img/grafica2.eps>
+Overfull \vbox (25.69641pt too high) detected at line 229
+ []
+
+[20
+
+]
+Runaway argument?
+ from math import * def regla_simpson(f,a,b): return (b-a)/6.0*(f(a)+\ETC.
+! Paragraph ended before \@xverbatim was complete.
+<to be read again> 
+                   \par 
+l.258 \end{frame}
+                 
+? cd /home/cpcroberto/TE/Grupo2K/docs/mem/tex
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? clear
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? cd /home/cpcroberto/TE/Grupo2K/slides/style
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? clear
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? cd /home/cpcroberto/TE/Grupo2K/docs/mem/tex
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? clear
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? cd /home/cpcroberto/TE/Grupo2K/slides/style
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? clear
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{frame}
+                 
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.258 \end{frame}
+                 
+? 
+! Missing { inserted.
+<to be read again> 
+                   _
+l.258 \end{frame}
+                 
+? 
+! TeX capacity exceeded, sorry [main memory size=3000000].
+'->\leavevmode \kern \z@ 
+                         \char `\'
+l.258 \end{frame}
+                 
 If you really absolutely need more capacity,
 you can ask a wizard to enlarge me.
 
  
 Here is how much of TeX's memory you used:
- 14979 strings out of 495062
- 277667 string characters out of 1182645
- 358636 words of memory out of 3000000
- 17757 multiletter control sequences out of 15000+50000
- 9731 words of font info for 36 fonts, out of 3000000 for 9000
+ 15204 strings out of 495062
+ 281916 string characters out of 1182645
+ 3000000 words of memory out of 3000000
+ 17963 multiletter control sequences out of 15000+50000
+ 14705 words of font info for 55 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 5000i,17n,4996p,419b,563s stack positions out of 5000i,500n,10000p,200000b,50000s
-Output written on tst.dvi (3 pages, 45444 bytes).
+ 49i,17n,57p,419b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
+Output written on tst.dvi (20 pages, 319416 bytes).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  13 MAY 2013 10:09
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  13 MAY 2013 18:22
 entering extended mode
  %&-line parsing enabled.
 **memte.tex
@@ -224,16 +224,13 @@ File: images/Grafica_Simpson.eps Graphic file (type eps)
 Cap\'{\i }tulo 3.
 (./tex/cap3.tex
 File: images/grafica1.eps Graphic file (type eps)
- <images/grafica1.eps>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6
+ <images/grafica1.eps> [6
 
 ] [7]
 File: images/grafica2.eps Graphic file (type eps)
- <images/grafica2.eps> [8] (./tables/table1.tex [9])
-(./tables/table2.tex)) [10]
+ <images/grafica2.eps> [8]
+(./tables/table1.tex [9]) (./tables/table2.tex) (./tables/table3.tex)
+(./tables/table4.tex)) [10]
 Cap\'{\i }tulo 4.
 (./tex/cap4.tex) [11
 
@@ -241,23 +238,19 @@ Cap\'{\i }tulo 4.
 
 ]
 Ap\'{e}ndice A.
-(./tex/apendice1.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[13
 
- [13
-
-]
-[14]) (./tex/apendice2.tex) (./tex/apendice3.tex [15] [16]) (./memte.bbl
-[17]) [18
+] (./tex/apendice1.tex [14]) [15] (./tex/apendice2.tex) [16]
+(./tex/apendice3.tex [17]) (./memte.bbl [18]) [19
 
 ] (./memte.aux) ) 
 Here is how much of TeX's memory you used:
- 1837 strings out of 495062
- 22473 string characters out of 1182645
- 78798 words of memory out of 3000000
- 4953 multiletter control sequences out of 15000+50000
+ 1847 strings out of 495062
+ 22590 string characters out of 1182645
+ 88798 words of memory out of 3000000
+ 4957 multiletter control sequences out of 15000+50000
  15986 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,8n,27p,208b,502s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,8n,27p,208b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on memte.dvi (26 pages, 44616 bytes).
+Output written on memte.dvi (27 pages, 46052 bytes).

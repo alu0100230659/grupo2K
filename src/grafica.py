@@ -1,3 +1,13 @@
+########################################################################
+# Fichero: grafica.py                                                  #
+#                                                                      #
+# Contenido: Representacion grafica de la funcion f(x)=x**2*cos(x)     #
+#                                                                      #
+# Autor/es: Adrian R. Mendioroz Morales                                #
+#           Roberto C. Palenzuela Criado                               #
+#                                                                      #
+# Fecha de creacion: 06 de mayo de 2013                                #
+########################################################################
 from math import cos
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, FormatStrFormatter
