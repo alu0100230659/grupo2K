@@ -10,6 +10,8 @@
 \usepackage{templates/algorithmic}
 \usepackage{templates/multirow}
 \usepackage{amstext}
+\usepackage{listings}
+\lstset{language=``lenguaje'',breaklines=true}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -198,8 +200,8 @@
 \chapter{Ficheros Python}
 \label{appendix:1}
 
-\input{tex/apendice1.tex}
-
+%\input{tex/apendice1.tex}
+\lstinputlisting{~/TE/Grupo2K/src/simpson.py}
 \end{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

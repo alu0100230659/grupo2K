@@ -1,5 +1,5 @@
 %--------------------------------------------------------------------------
-\begin{table}[!ht]
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{|c|c|c|c|} \hline 
 \textbf{Valor exacto} & \textbf{Aproximacion} & \textbf{Error absoluto} & \textbf{Error relativo}\\ 
@@ -9,7 +9,7 @@
 \hline
 \end{tabular}
 \end{center}
-\caption{Aproximacion y error del metodo de Simpson}
+\caption{Aproximacion y error de la regla de Simpson}
 \label{tab:1}
 \end{table}
 

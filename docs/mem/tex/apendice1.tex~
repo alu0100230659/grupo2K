@@ -24,7 +24,7 @@
 #      Salida:
 #         Aproximacion de la integral de f en [a,b]
 # 
-#   regla_simpson_compuesta: Calcula una aproximacion a la integral de una función en un 
+#   regla_simpson_compuesta: Calcula una aproximacion a la integral de una funcion en un 
 #                            intervalo [a,b], empleando n subintervalos y aplicando la 
 #                            regla de Simpson compuesta.
 #      Entrada:
@@ -57,17 +57,17 @@ def regla_simpson_compuesta(f,a,b,n):
 \label{Apendice1:error}
 
 \begin{center}
-  \begin{footnotesize}
-    \begin{verbatim}
-      #! /usr/bin/python
-      ###################################################################################
-      # Fichero: uso_simpson.py
-      ###################################################################################
-      #
-      # Contenido: Comprobacion de los errores cometidos al aplicar la regla de Simpson
-      #            simple y compuesta a la función f(x)=x**2*cos(x), en el intervalo
-      #            [a,b].
-       #
+\begin{footnotesize}
+\begin{verbatim}
+#! /usr/bin/python
+###################################################################################
+# Fichero: uso_simpson.py
+###################################################################################
+#
+# Contenido: Comprobacion de los errores cometidos al aplicar la regla de Simpson
+#            simple y compuesta a la funcion f(x)=x**2*cos(x), en el intervalo
+#            [a,b].
+#
 # Autor/es: Adrian R. Mendioroz Morales
 #           Roberto C. Palenzuela Criado
 #

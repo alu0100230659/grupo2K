@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  8 MAY 2013 23:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  10 MAY 2013 16:21
 entering extended mode
  %&-line parsing enabled.
 **memte.tex
@@ -16,5 +16,5 @@ Here is how much of TeX's memory you used:
  3282 multiletter control sequences out of 15000+50000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 0i,0n,0p,12b,6s stack positions out of 5000i,500n,10000p,200000b,50000s
 No pages of output.

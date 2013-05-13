@@ -85,16 +85,18 @@ absolutos y relativos de cada experimento.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción del material}
 \label{3:sec:2}
-
-
-
+Las características del ordenador empleado para la realización de este trabajo son las siguientes:
+\begin{itemize}
+ \item CPU type: Intel(R) Atom(TM) CPU N270   @ 1.60GHz
+ \item CPU speed: 800.000Hz
+ \item Cache size: 512 KB
+\end{itemize}
+En cuanto al sistema operativo, se ha utlizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
+Los ficheros en lenguaje Python fueron realizados con el editor de textos avanzado para KDE ``Kate''.
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Resultados obtenidos}
 \label{3:sec:3}
-
-bla, bla, etc. 
-
 
 %------------------------------------------------------------------------------
 \begin{figure}[!th]
@@ -105,13 +107,11 @@ bla, bla, etc.
 \end{center}
 \end{figure}
 %------------------------------------------------------------------------------
-
-
+\input{tables/table1.tex}
 %------------------------------------------------------------------------------
-\input{tables/table.tex}
-%------------------------------------------------------------------------------
-
+\input{tables/table2.tex}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 \section{Análisis de los resultados}
 \label{3:sec:4}
 
