@@ -41,7 +41,3 @@
    note      = "http://www.acm.org/publications/latex\_style/"
 }
 
-@MISC{URL:CTAN,
-   author    = "CTAN",
-   note      = "http://www.ctan.org/"
-}

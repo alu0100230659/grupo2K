@@ -3,6 +3,7 @@
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{epstopdf}
 
 \newcommand{\beamer}{\textsc{beamer}}
 \newtheorem{definicion}{Definición}
@@ -36,7 +37,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-  
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
 
@@ -62,19 +62,17 @@
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
-
 \section{Motivación y Objetivos}
-
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
 
-\frametitle{Motivación}
+  \frametitle{Motivación}
 
-\begin{block}{}
-Aprender a aplicar conocimientos matemáticos de forma profesional en la elaboración y defensa de argumentos y 
-en la resolución de problemas.
-\end{block}
+  \begin{block}{}
+    Aprender a aplicar conocimientos matemáticos de forma profesional en la 
+    elaboración y defensa de argumentos y en la resolución de problemas.
+  \end{block}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
@@ -82,32 +80,30 @@ en la resolución de problemas.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
 
-\frametitle{Objetivos}
+  \frametitle{Objetivos}
 
-\begin{block}{}
-  \begin{itemize}
-  \item
-   Investigar el método numérico de la Regla de Simpson. 
-  \item
-   Aplicar la Regla de Simpson a la función $f(x)=x^{2}\ cos\ x$, en el intervalo $[1,3]$.
-
-  \end{itemize}
-
-\end{block}
+  \begin{block}{}
+    \begin{itemize}
+      \item Investigar el método numérico de la Regla de Simpson. 
+      \item Aplicar la Regla de Simpson a la función $f(x)=x^{2}\ cos\ x$, en el intervalo $[1,3]$.
+    \end{itemize}
+  \end{block}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 \section{Fundamentos Teóricos}
 
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{frame}
+
   \frametitle{Fundamentos Teóricos}
+  
   La necesidad de aproximar numéricamente el valor de una integral surge fundamentalmente por dos motivos:
   \begin{itemize}
     \item La dificultad o imposibilidad en el cálculo de una primitiva.
     \item La función a integrar sólo se conoce por una tabla de valores.
   \end{itemize}
-  
   El problema básico considerado por la integración numérica es calcular una solución
   aproximada a la integral definida:
   \[\int_{a}^{b} f(x)\ \text{d}x \]
@@ -118,295 +114,293 @@ en la resolución de problemas.
   \end{itemize}
   
 \end{frame}
-
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{frame}
+  
   \frametitle{Fundamentos Teóricos}
+  
   \begin{block}{Regla de Simpson}
     Se desea aproximar la integral:
     \[ I = \int_{a}^{b} f(x) \text{d}x \]
-  \begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.50\textwidth]{img/Grafica_Simpson.eps}
-  \caption{Descripción gráfica de la regla de Simpson}
-  \label{Grafica_Simpson}
-  \end{figure}
-  
+    \begin{center}
+      \includegraphics[width=0.50\textwidth]{img/Grafica_Simpson.eps}
+    \end{center}  
   \end{block}
  
 \end{frame}
-
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{frame}
+
   \frametitle{Fundamentos Teóricos}
+  
   \begin{block}{Regla de Simpson}
-  \[ \int_{a}^{b} f(x) \text{d}x \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right] \]
-  Error asociado:
-  \[ -\frac{1}{90}(b-a)^5f^{(4)}(\xi), \quad \xi \in (a,b) \]
+    \[ \int_{a}^{b} f(x) \text{d}x \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right] \]
+    \[\text{Error asociado: } -\frac{1}{90}(b-a)^5f^{(4)}(\xi), \quad \xi \in (a,b)\]
   \end{block}
-\end{frame}
 
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{frame}
+
   \frametitle{Fundamentos Teóricos}
+  
   \begin{block}{Regla de Simpson Compuesta}
-  \[ \int_{a}^{b}f(x) \text{d}x \approx \frac{h}{3}\left[f(x_0) + 2\sum_{j=1}^{\frac{n}{2}-1} f(x_{2j}) + 
-  4\sum_{j=1}^{\frac{n}{2}} f(x_{2j-1}) + f(x_n)\right] \]
-  Error asociado:
-    \[ -\frac{1}{180}(b-a)h^4f^{(4)}(\xi), \quad \xi \in (a,b) \]
+    \[ \int_{a}^{b}f(x) \text{d}x \approx \frac{h}{3}\left[f(x_0) + 2\sum_{j=1}^{\frac{n}{2}-1} f(x_{2j}) + 
+    4\sum_{j=1}^{\frac{n}{2}} f(x_{2j-1}) + f(x_n)\right] \]
+    \[\text{Error asociado: }-\frac{1}{180}(b-a)h^4f^{(4)}(\xi), \quad \xi \in (a,b) \]
   \end{block}
+
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 \section{Procedimiento experimental}
 
-\begin{frame}
-\frametitle{Procedimiento experimental}
-
-\[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
-
-\end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 \subsection{Descripción de los experimentos}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Procedimiento experimental}
 
-\begin{block}{Descripción de los experimentos}
-  \begin{itemize}
-    \item <1-> Representación gráfica de la función.
-    \pause
-    \item <2-> Cálculo del valor exacto de la integral definida.
-    \pause  
-    \item <3-> Comparación grafica.
-    \pause
-    \item <4-> Aproximación por la Regla de Simpson.
-    \pause
-    \item <5-> Aproximación por la Regla de Simpson compuesta.
-    
-  \end{itemize}
-\end{block}
+  \frametitle{Procedimiento experimental}
 
-\end{frame}
-
-\begin{frame}
-\frametitle{Procedimiento experimental}
-  \begin{block}{Representación gráfica de la función}
-  \begin{figure}[ht]
-   \centering
-   \includegraphics[width=0.75\textwidth]{img/grafica1.eps}
-   \caption{Representación gráfica de la función a integrar.}
-   \end{figure}
-   \end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Procedimiento experimental}
-  \begin{block}{Cálculo del valor exacto de la integral definida}
-
-  \[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x \]
-  \[ \int x^2\ cos\ x\ \text{d}x = x^2 sen\ x - \int 2x sen\ x\ \text{d}x = \]
-  \[ = x^2 sen\ x - \left[-2x cos\ x + 2\int cos\ x\ \text{d}x \right] = 
-  x^2 sen\ x +2x cos\ x - 2sen\ x = \]
-  \[ 2x cos\ x + (x^2 -2)sen\ x \]
-
+  \begin{block}{Descripci\'on de los experimentos}
+    \begin{itemize}
+      \item <1-> Representación gráfica de la función.
+      \pause
+      \item <2-> Cálculo del valor exacto de la integral definida.
+      \pause  
+      \item <3-> Comparación grafica.
+      \pause
+      \item <4-> Aproximación por la Regla de Simpson.
+      \pause
+      \item <5-> Aproximación por la Regla de Simpson compuesta.
+    \end{itemize}
   \end{block}
+
 \end{frame}
-
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \begin{frame}
-\frametitle{Procedimiento experimental}
-  \begin{block}{Comparación Gráfica}
 
-  \begin{figure}[h]
+  \frametitle{Descripción de los experimentos}
+  
+  \begin{block}{Representación gráfica de la función}
+    \begin{center}
+      \includegraphics[width=0.75\textwidth]{img/grafica1.eps}
+    \end{center}
+  \end{block}
+
+\end{frame}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+
+  \frametitle{Descripción de los experimentos}
+  
+  \begin{block}{Cálculo del valor exacto de la integral definida}
+    \begin{itemize}[<+->]
+     \item \[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x  \]
+     \item \[ \int x^2\ cos\ x\ \text{d}x = 2x cos\ x + (x^2 -2)sen\ x +C=F(x)+C\]
+     \item \[ \int_{1}^{3} x^2\ cos\ x\ \text{d}x = F(3)-F(1)\]
+    \end{itemize}   
+  \end{block}
+
+\end{frame}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+
+  \frametitle{Descripción de los experimentos}
+  
+  \begin{block}{Comparación Gráfica}
     \begin{center}
       \includegraphics[width=0.75\textwidth]{img/grafica2.eps}
-      \caption{Funcion vs. Polinomio interpolador}
-      \label{grafica2}
     \end{center}
-  \end{figure}
   \end{block}
  
 \end{frame}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}[fragile]
 
-\begin{frame}
-\frametitle{Procedimiento experimental}
-  \begin{block}{Aproximación por la Regla de Simpson}
-  \begin{itemize}
-   \item Módulo:
-   \begin{verbatim}
-   from math import *
-   def regla_simpson(f,a,b):
-     return (b-a)/6.0*(f(a)+4*f((a+b)/2.0)+f(b))
-  \end{verbatim}
-  \item Programa Principal:
-  \begin{verbatim}
-    from simpson import regla_simpson
-    from math import *
-
-    if __name__ == '__main__':
+  \frametitle{Procedimiento experimental}
   
-      F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
-      print '\nValor real= ',F
-
-      aprox=regla_simpson(lambda x:(x**2*cos(x)),1,3)
-      print '\nAproximacion por la regla de Simpson: ',aprox
-
-  \end{verbatim}
-  \end{itemize}
-
+  \begin{block}{Aproximación por la regla de Simpson}
+    Función:
+      \begin{center}
+        \begin{footnotesize}
+          \begin{verbatim}
+def regla_simpson(f,a,b):
+  return (b-a)/6.0*(f(a)+4*f((a+b)/2.0)+f(b))
+          \end{verbatim}
+        \end{footnotesize}
+      \end{center}
+    Programa Principal:
+      \begin{center}
+        \begin{footnotesize}
+          \begin{verbatim}
+from simpson import regla_simpson
+from math import *
+F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+print '\nValor real= ',F
+aprox=regla_simpson(lambda x:(x**2*cos(x)),1,3)
+print '\nAproximacion por la regla de Simpson: ',aprox
+          \end{verbatim}
+        \end{footnotesize}
+      \end{center}
   \end{block}
+  
 \end{frame}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}[fragile]
 
-\begin{frame}
-\frametitle{Procedimiento experimental}
-  \begin{block}{Aproximación por la Regla de Simpson Compuesta}
-  \begin{itemize}
-   \item Módulo:
-   \begin{verbatim}
-   def regla_simpson_compuesta(f,a,b,n):
-     h=(b-a)/float(n)
-     aprox=0
-     for l in range(0,n):
-       aprox+=regla_simpson(lambda x:(x**2*cos(x)),a+l*h,a+(l+1)*h)
-     return aprox
-  \end{verbatim}
-  \item Programa Principal:
-  \begin{verbatim}
-    from simpson import regla_simpson_compuesta
-    from math import *
-
-    F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
-    print '\nValor real= ',F
-
-    print '\nAproximacion por la regla de Simpson compuesta: '
-    print '%25s %15s %15s %15s' % ('Numero de subintervalos','Aproximacion',
-    'Error absoluto','Error relativo')
-    n=[2,6,10,50,100]
-    aprox=0
-    i=0
-    for l in n:
-      aprox=regla_simpson_compuesta(lambda x:(x**2*cos(x)),1,3,l)
-      print '%16d %24.10f %15.10f %15.10f' %(n[i],aprox,abs(F-aprox),
-      abs(F-aprox)/abs(F))
-      i=i+1
-
-  \end{verbatim}
-  \end{itemize}
-
+  \frametitle{Procedimiento experimental}
+  
+  \begin{block}{Aproximación por la regla de Simpson compuesta}
+    Función:
+    \begin{center}
+      \begin{footnotesize}
+        \begin{verbatim}
+def regla_simpson_compuesta(f,a,b,n):
+  h=(b-a)/float(n)
+  aprox=0
+  for l in range(0,n):
+    aprox+=regla_simpson(lambda x:(x**2*cos(x)),
+    a+l*h,a+(l+1)*h)
+  return aprox
+        \end{verbatim}
+      \end{footnotesize}
+    \end{center}
   \end{block}
+  
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+\begin{frame}[fragile]
 
+  \frametitle{Procedimiento experimental}
+  
+  \begin{block}{Aproximación por la regla de Simpson compuesta}
+    Programa Principal:
+    \begin{center}
+      \begin{footnotesize}
+        \begin{verbatim}
+from simpson import regla_simpson_compuesta
+from math import *
+F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+print 'Valor real= ',F
+print 'Aproximacion por la regla de Simpson compuesta: '
+print '%25s %15s %15s %15s' % ('Numero de subintervalos',
+'Aproximacion','Error absoluto','Error relativo')
+n=[2,6,10,50,100]
+aprox=0
+i=0
+for l in n:
+  aprox=regla_simpson_compuesta(lambda x:(x**2*cos(x)),1,3,l)
+  print '%16d %24.10f %15.10f %15.10f' %(n[i],aprox,abs(F-aprox),
+  abs(F-aprox)/abs(F))
+  i=i+1
+        \end{verbatim}
+      \end{footnotesize}
+    \end{center}
+  \end{block}
+  
+\end{frame}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \subsection{Descripción del material}
+
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Descripción del material}
 
-\begin{block}{Hardware}
-  \begin{itemize}
-  \item CPU type: Intel(R) Atom(TM) CPU N270   @ 1.60GHz
-  \item CPU speed: 800.000Hz
-  \item Cache size: 512 KB
-  \end{itemize}
-\end{block}
+  \frametitle{Descripción del material}
+  
+  \begin{block}{Hardware}
+    \begin{itemize}
+      \item CPU type: Intel(R) Atom(TM) CPU N270   @ 1.60GHz
+      \item CPU speed: 800.000Hz
+      \item Cache size: 512 KB
+    \end{itemize}
+  \end{block}
 
-\begin{block}{Software}
-En cuanto al sistema operativo, se ha utlizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
-Los ficheros en lenguaje Python fueron realizados con el editor de textos avanzado para KDE ``Kate''.
-\end{block}
+  \begin{block}{Software}
+    En cuanto al sistema operativo, se ha utlizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
+    Los ficheros en lenguaje Python fueron realizados con el editor de textos avanzado para KDE ``Kate''.
+  \end{block}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
 \subsection{Resultados obtenidos}
+
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Resultados Obtenidos}
-
-%------------------------------------------------------------------------------
-\input{tables/table1.tex}
-\input{tables/table2.tex}
-%------------------------------------------------------------------------------
+  
+  \frametitle{Resultados Obtenidos}
+  
+  \input{tables/table1.tex}
+  \input{tables/table2.tex}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-
 
 \subsection{Análisis de los resultados}
+
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Análisis de los resultados}
 
-%------------------------------------------------------------------------------
-\input{tables/table1.tex}
-\input{tables/table2.tex}
-%------------------------------------------------------------------------------
+  \frametitle{Análisis de los resultados}
+  
+  \input{tables/table3.tex}
+  \input{tables/table4.tex}
 
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-
 
 \section{Conclusiones}
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
-\frametitle{Conclusiones}
-
-\begin{block}{Conclusiones}
-  \begin{enumerate}
-    \item La integraci\'on num\'erica reduce el c\'alculo del valor de la integral 
-    definida en el caso de funciones muy complejas, a simples operaciones aritm\'eticas.
-    \item La Regla de Simpson simplifica el c\'alculo de una integral definida 
-    compleja, aproximando su valor al de la integral de un polinomio de segundo 
-    grado.
-    \item La Regla de Simpson es m\'as precisa que otros m\'etodos como la Regla del 
-    Trapecio a la hora de aproximar la integral.
-    \item La Regla de Simpson proporciona aproximaciones exactas para polinomios 
-    de grado menor o igual a tres.
-    \item La Regla de Simpson Compuesta proporciona aproximaciones m\'as precisas 
-    que la Regla de Simpson.
-    \item En la Regla de Simpson Compuesta, el error es inversamente proporcional 
-    al n\'umero de subintervalos.
-    \item En la Regla de Simpson Compuesta, el error es directamente proporcional 
-    a la amplitud del intervalo.
+  
+  \frametitle{Conclusiones}
+  
+  \begin{block}{}
+    \begin{enumerate}[<+->]
+      \item La integraci\'on num\'erica reduce el c\'alculo del valor de la integral 
+      definida en el caso de funciones muy complejas, a simples operaciones aritm\'eticas.
+      \item La Regla de Simpson simplifica el c\'alculo de una integral definida 
+      compleja, aproximando su valor al de la integral de un polinomio de segundo 
+      grado.
+      \item La Regla de Simpson es m\'as precisa que otros m\'etodos como la Regla del 
+      Trapecio a la hora de aproximar la integral.
+      \item La Regla de Simpson proporciona aproximaciones exactas para polinomios 
+      de grado menor o igual a tres.
     \end{enumerate}
-\end{ejemplo}
+ \end{block}
 
 \end{frame}
-%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}
+  
+  \frametitle{Conclusiones}
+  
+  \begin{block}{}
+    \begin{enumerate}[<+->]
+      \item La Regla de Simpson Compuesta proporciona aproximaciones m\'as precisas 
+      que la Regla de Simpson.
+      \item En la Regla de Simpson Compuesta, el error es inversamente proporcional 
+      al n\'umero de subintervalos.
+      \item En la Regla de Simpson Compuesta, el error es directamente proporcional 
+      a la amplitud del intervalo.
+    \end{enumerate}
+ \end{block}
 
+\end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
+
   \frametitle{Bibliografía}
-
-  \begin{thebibliography}{10}
-
-    \beamertemplatebookbibitems
-    \bibitem[Plan Estudios, 2011]{plan}  
-    Documento de verificación del grado. 
-    (2011) 
-
-    \beamertemplatebookbibitems
-    \bibitem[Guía Docente, 2013]{guia}  
-    Guía docente. 
-    (2013) 
-    {\small $http://eguia.ull.es/matematicas/query.php?codigo=299341201$}
-
-    \beamertemplatebookbibitems
-    \bibitem[URL: CTAN]{latex} 
-    CTAN. {\small $http://www.ctan.org/$}
-
-    \beamertemplatebookbibitems
-    \bibitem[Tantau, 2005]{beamer} 
-    Tantau, Till. 
-    \emph{User's Guide to the \beamer{} Class, Version 3.06, 2005} 
-    {\small $http://ctang.tug.org/tex-archive/macros/latex/contrib/beamer$}
-
-
-  \end{thebibliography}
+  
+  \bibliographystyle{plain}
+  \bibliography{bib/references.bib}
+  \nocite{*}
+  
 \end{frame}
-
-
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
-
 \end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

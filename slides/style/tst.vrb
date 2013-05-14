@@ -1,0 +1,27 @@
+\par   \frametitle{Procedimiento experimental}
+
+  \begin{block}{Aproximación por la regla de Simpson compuesta}
+    Programa Principal:
+    \begin{center}
+      \begin{footnotesize}
+        \begin{verbatim}
+from simpson import regla_simpson_compuesta
+from math import *
+F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+print 'Valor real= ',F
+print 'Aproximacion por la regla de Simpson compuesta: '
+print '%25s %15s %15s %15s' % ('Numero de subintervalos',
+'Aproximacion','Error absoluto','Error relativo')
+n=[2,6,10,50,100]
+aprox=0
+i=0
+for l in n:
+  aprox=regla_simpson_compuesta(lambda x:(x**2*cos(x)),1,3,l)
+  print '%16d %24.10f %15.10f %15.10f' %(n[i],aprox,abs(F-aprox),
+  abs(F-aprox)/abs(F))
+  i=i+1
+        \end{verbatim}
+      \end{footnotesize}
+    \end{center}
+  \end{block}
+

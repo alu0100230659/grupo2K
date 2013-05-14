@@ -31,6 +31,12 @@
   year      = "1982"
 }
 
+@book{Tantau:2010,
+  author = "Till Tantau",
+  title  = "User's guide to the beamer class",
+  year   = "2010"
+}
+
 @MISC{URL:XML,
   author = "Weisstein, Eric W.",
   note   = "http://mathworld.wolfram.com/SimpsonsRule.html"
@@ -39,9 +45,4 @@
 @MISC{URL:ACM,
    author    = "ACM LaTeX Style",
    note      = "http://www.acm.org/publications/latex\_style/"
-}
-
-@MISC{URL:CTAN,
-   author    = "CTAN",
-   note      = "http://www.ctan.org/"
 }

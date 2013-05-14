@@ -24,35 +24,41 @@
 \headcommand {\sectionentry {3}{Procedimiento experimental}{12}{Procedimiento experimental}{0}}
 \headcommand {\beamer@sectionpages {8}{11}}
 \headcommand {\beamer@subsectionpages {8}{11}}
-\headcommand {\slideentry {3}{0}{9}{12/12}{}{0}}
-\headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{13}{Descripci\IeC {\'o}n de los experimentos}}\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {3}{1}{1}{13/17}{Descripci\IeC {\'o}n de los experimentos}{0}}
-\headcommand {\beamer@framepages {13}{17}}
-\headcommand {\slideentry {3}{1}{2}{18/18}{Descripci\IeC {\'o}n de los experimentos}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{1}{3}{19/19}{Descripci\IeC {\'o}n de los experimentos}{0}}
-\headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{1}{4}{20/20}{Descripci\IeC {\'o}n de los experimentos}{0}}
-\headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{21}{Descripci\IeC {\'o}n del material}}\headcommand {\beamer@subsectionpages {13}{20}}
-\headcommand {\slideentry {3}{2}{1}{21/22}{Descripci\IeC {\'o}n del material}{0}}
-\headcommand {\beamer@framepages {21}{22}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{23}{Resultados obtenidos}}\headcommand {\beamer@subsectionpages {21}{22}}
-\headcommand {\slideentry {3}{3}{1}{23/23}{Resultados obtenidos}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{12}{Descripci\IeC {\'o}n de los experimentos}}\headcommand {\beamer@subsectionpages {12}{11}}
+\headcommand {\slideentry {3}{1}{1}{12/16}{Descripci\IeC {\'o}n de los experimentos}{0}}
+\headcommand {\beamer@framepages {12}{16}}
+\headcommand {\slideentry {3}{1}{2}{17/17}{Descripci\IeC {\'o}n de los experimentos}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {3}{1}{3}{18/20}{Descripci\IeC {\'o}n de los experimentos}{0}}
+\headcommand {\beamer@framepages {18}{20}}
+\headcommand {\slideentry {3}{1}{4}{21/21}{Descripci\IeC {\'o}n de los experimentos}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{1}{5}{22/22}{Descripci\IeC {\'o}n de los experimentos}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{1}{6}{23/23}{Descripci\IeC {\'o}n de los experimentos}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{24}{An\IeC {\'a}lisis de los resultados}}\headcommand {\beamer@subsectionpages {23}{23}}
-\headcommand {\slideentry {3}{4}{1}{24/24}{An\IeC {\'a}lisis de los resultados}{0}}
+\headcommand {\slideentry {3}{1}{7}{24/24}{Descripci\IeC {\'o}n de los experimentos}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\sectionentry {4}{Conclusiones}{25}{Conclusiones}{0}}
-\headcommand {\beamer@sectionpages {12}{24}}
-\headcommand {\beamer@subsectionpages {24}{24}}
-\headcommand {\slideentry {4}{0}{2}{25/26}{}{0}}
-\headcommand {\beamer@framepages {25}{26}}
-\headcommand {\slideentry {4}{0}{3}{27/27}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{25}{Descripci\IeC {\'o}n del material}}\headcommand {\beamer@subsectionpages {12}{24}}
+\headcommand {\slideentry {3}{2}{1}{25/25}{Descripci\IeC {\'o}n del material}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{26}{Resultados obtenidos}}\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\slideentry {3}{3}{1}{26/26}{Resultados obtenidos}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{27}{An\IeC {\'a}lisis de los resultados}}\headcommand {\beamer@subsectionpages {26}{26}}
+\headcommand {\slideentry {3}{4}{1}{27/27}{An\IeC {\'a}lisis de los resultados}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\beamer@partpages {1}{27}}
-\headcommand {\beamer@subsectionpages {25}{27}}
-\headcommand {\beamer@sectionpages {25}{27}}
-\headcommand {\beamer@documentpages {27}}
-\headcommand {\def \inserttotalframenumber {18}}
+\headcommand {\sectionentry {4}{Conclusiones}{28}{Conclusiones}{0}}
+\headcommand {\beamer@sectionpages {12}{27}}
+\headcommand {\beamer@subsectionpages {27}{27}}
+\headcommand {\slideentry {4}{0}{2}{28/31}{}{0}}
+\headcommand {\beamer@framepages {28}{31}}
+\headcommand {\slideentry {4}{0}{3}{32/34}{}{0}}
+\headcommand {\beamer@framepages {32}{34}}
+\headcommand {\slideentry {4}{0}{4}{35/35}{}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\beamer@partpages {1}{35}}
+\headcommand {\beamer@subsectionpages {28}{35}}
+\headcommand {\beamer@sectionpages {28}{35}}
+\headcommand {\beamer@documentpages {35}}
+\headcommand {\def \inserttotalframenumber {21}}

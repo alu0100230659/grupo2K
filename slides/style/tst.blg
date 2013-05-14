@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: tst.aux
+The style file: plain.bst
+Database file #1: bib/references.bib.bib
+Warning--empty publisher in Tantau:2010
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            523 strings with 4514 characters,
+and the built_in function-call counts, 1086 in all, are:
+= -- 90
+> -- 41
+< -- 0
++ -- 17
+- -- 12
+* -- 43
+:= -- 189
+add.period$ -- 13
+call.type$ -- 5
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 50
+empty$ -- 111
+format.name$ -- 12
+if$ -- 228
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 6
+newline$ -- 26
+num.names$ -- 10
+pop$ -- 49
+preamble$ -- 1
+purify$ -- 16
+quote$ -- 0
+skip$ -- 33
+stack$ -- 0
+substring$ -- 25
+swap$ -- 5
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 1
+while$ -- 10
+width$ -- 6
+write$ -- 46
+(There was 1 warning)

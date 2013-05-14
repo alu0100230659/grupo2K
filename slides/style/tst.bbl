@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{KincaidCheney:gopen:1990}
+David Kincaid and Ward Cheney.
+\newblock {\em An\'alisis Num\'erico. Las matem\'aticas del c\'alculo
+  cient\'ifico.}
+\newblock Addison-Wesley Iberoamericana, 1994.
+
+\bibitem{Lamport:LDP94}
+Leslie Lamport.
+\newblock {\em \LaTeX: A Document Preparation System.}
+\newblock Addison--Wesley Pub.\ Co., Reading, MA, 1986.
+
+\bibitem{URL:ACM}
+ACM~LaTeX Style.
+\newblock http://www.acm.org/publications/latex\_style/.
+
+\bibitem{Tantau:2010}
+Till Tantau.
+\newblock {\em User's guide to the beamer class}.
+\newblock 2010.
+
+\bibitem{URL:XML}
+Eric~W. Weisstein.
+\newblock http://mathworld.wolfram.com/SimpsonsRule.html.
+
+\end{thebibliography}
