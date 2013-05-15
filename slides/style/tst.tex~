@@ -170,7 +170,7 @@
       \pause
       \item <2-> Cálculo del valor exacto de la integral definida.
       \pause  
-      \item <3-> Comparación grafica.
+      \item <3-> Comparación gráfica.
       \pause
       \item <4-> Aproximación por la Regla de Simpson.
       \pause
@@ -319,7 +319,7 @@ for l in n:
   \end{block}
 
   \begin{block}{Software}
-    En cuanto al sistema operativo, se ha utlizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
+    En cuanto al sistema operativo, se ha utilizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
     Los ficheros en lenguaje Python fueron realizados con el editor de textos avanzado para KDE ``Kate''.
   \end{block}
 

@@ -16,7 +16,7 @@ La necesidad de aproximar numéricamente el valor de una integral surge fundament
 
 La integración numérica constituye una amplia gama de algoritmos para calcular
 el valor numérico de una integral definida y, por extensión, el término se usa a 
-veces para describir algoritmos numéricos para resolver ecuaciones diferenciales.
+veces en la descripción de algoritmos numéricos para resolver ecuaciones diferenciales.
 El problema básico considerado por la integración numérica es calcular una solución
 aproximada a la integral definida:
 \[\int_{a}^{b} f(x)\ \text{d}x \]
@@ -84,7 +84,7 @@ Se sustituye la expresión $(a-c)(a-b)$ de la siguiente forma:
 \[ (a-b)(a-c) = -2h(h-2h) \]
 \[ (a-b)(a-c) = -h^2 \]
 
-Obteniéndose así que:
+Obteniéndose así:
 
 \[ \int_{a}^{b} \frac{(x-c)(x-b)}{(a-c)(a-b)} \text{d}x = 
 \frac{1}{2h^2} \int_{a}^{a+2h} (x-c)(x-b) \text{d}x \]
@@ -102,18 +102,18 @@ De la misma forma:
 \[ (x-b) = u-2\frac{b-a}{2} \]
 \[ (x-b) = u-2h \]
 
-De lo que se obtiene que:
+De lo que se obtiene:
 
 \[ \int_{a}^{b}\frac{(x-c)(x-b)}{(a-c)(a-b)} \text{d}x = 
 \frac{1}{h^2}\int_{a}^{a+2h}(x-c)(x-b) \text{d}x = 
 \frac{1}{2h^2}\int_{0}^{2h}(u-h)(u-2h) \text{d}u = \frac{h}{3} \]
 
-Análogamente se deduce que:
+Análogamente se deduce:
 
 \[ \int_{a}^{b}\frac{(x-a)(x-b)}{(c-a)(c-b)} \text{d}x = \frac{4h}{3} \quad ; \quad 
 \int_{a}^{b}\frac{(x-a)(x-c)}{(b-a)(b-c)} \text{d}x = \frac{h}{3} \]
 
-Por tanto, se tiene que:
+Por tanto, se tiene:
 
 \[ I = \int_{a}^{b} f(x) \text{d}x \approx \frac{h}{3}\left[f(a) + 4f\left(\frac{a+b}{2}\right) + f(b)\right] \]
 

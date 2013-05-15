@@ -11,7 +11,6 @@
 # Fecha de creacion: 06 de mayo de 2013                                #
 ########################################################################
 from math import cos
-import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator, FormatStrFormatter
 import numpy as np
 from matplotlib.pylab import *
@@ -26,7 +25,7 @@ t=linspace(-1,3.5,51)
 y1 = f1(t)
 y2 = f2(t)
   
-fig = plt.figure(1)
+fig = figure(1)
 ax = fig.add_subplot(111) 
 # set up axis
 ax.spines['left'].set_position('zero')

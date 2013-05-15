@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{URL:CTAN}
+CTAN.
+\newblock http://www.ctan.org/.
+
 \bibitem{KincaidCheney:gopen:1990}
 David Kincaid and Ward Cheney.
 \newblock {\em An\'alisis Num\'erico. Las matem\'aticas del c\'alculo
