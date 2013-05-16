@@ -2,7 +2,7 @@
 \begin{table}[H]
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|} \hline 
-      \textbf{N} & \textbf{Aproximaci\'on} & \textbf{E. absoluto} & \textbf{E. relativo} & \textbf{C. S.}\\ 
+      \textbf{N\'umero de subintervalos} & \textbf{Aproximaci\'on} & \textbf{Error absoluto} & \textbf{Error relativo}\\ 
       \hline
       2 & -5.1817934049 & 0.0094551452 & 0.0018213625
       \\

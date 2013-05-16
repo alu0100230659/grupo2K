@@ -29,7 +29,7 @@ Los métodos más comunes de integración numérica son:
 \section{Regla de Simpson}
 \label{2:sec:2}
 Una forma de obtener una aproximación adecuada de una integral es usar polinomios de grado superior
-para unir los puntos y aproximar la función real.
+para unir los puntos y aproximar la función.
 
 El método de Simpson, a diferencia de la Regla del Trapecio, intenta no recurrir a un mayor número 
 de subdivisiones; se trata de ajustar una curva de orden superior en lugar de una línea recta como 

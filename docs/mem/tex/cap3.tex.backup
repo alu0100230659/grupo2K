@@ -20,8 +20,9 @@ Los experimentos realizados son los siguientes:
 \begin{itemize}
  \item Representación gráfica de la función.
  \item Cálculo del valor exacto de la integral definida.
- \item Comparación grafica. 
+ \item Comparación gráfica. 
  \item Aproximación por la Regla de Simpson.
+ \item Cálculo de errores y cifras significativas.
  \item Aproximación por la Regla de Simpson compuesta.
 \end{itemize}
 
@@ -91,7 +92,7 @@ Se puede ver el código Python en el apéndice~\ref{Apendice3:error1}
 \begin{figure}[h]
   \begin{center}
     \includegraphics[width=0.75\textwidth]{images/grafica2.eps}
-    \caption{Funcion vs. Polinomio interpolador}
+    \caption{Función vs. Polinomio interpolador}
     \label{grafica2}
   \end{center}
 \end{figure}
@@ -130,13 +131,26 @@ devolviendo la aproximación buscada, el resultado se muestra en la tabla~\ref{ta
 que se encuentra en la página~\pageref{tab:1}. Se puede ver el código Python en el 
 apéndice~\ref{Apendice3:error1}
 
+\subsection{Cálculo de errores y cifras significativas.}
+
+Una vez obtenidos el valor exacto y la aproximación, que se denotaran $v$ y $v^*$
+respectivamente, se procederá al cálculo del error absoluto, el error relativo 
+y las cifras significativas.
+
+\[\text{Error absoluto} = \vert v - v^* \vert\]
+
+\[\text{Error relativo} = \frac{\vert v - v^* \vert}{\vert v \vert}\]
+
+$\frac{\vert v - v^* \vert}{\vert v \vert} < 5.10^{-t}$, siendo $t$ el numero de dígitos significativos
+(o cifras exactas).
+
 \subsection{Aproximación por la regla de Simpson compuesta.}
 
 Para un mejor análisis de los resultados, se repite el estudio aplicando la Regla de 
 Simpson compuesta, implementando una función en Python que recibe por parámetros la expresión a estudiar, 
 los extremos del intervalo y el número par de subintervalos en los que se ha dividido, devolviendo la 
 aproximación buscada, el resultado se muestra en la tabla~\ref{tab:2}, que se encuentra en la 
-página~\pageref{tab:2}. Se puede ver el código Python en el apéndice~\ref{Apendice3:error2}) 
+página~\pageref{tab:2}. Se puede ver el código Python en el apéndice~\ref{Apendice3:error2}.
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 \section{Descripción del material}
@@ -147,7 +161,7 @@ Las características del ordenador empleado para la realización de este trabajo s
  \item CPU speed: 800.000Hz
  \item Cache size: 512 KB
 \end{itemize}
-En cuanto al sistema operativo, se ha utlizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
+En cuanto al sistema operativo, se ha utilizado ``Linux-3.2.0-39-generic-i686-with-Ubuntu-12.04-precise''.
 Los ficheros en lenguaje Python fueron realizados con el editor de textos avanzado para KDE ``Kate''.
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -170,6 +184,6 @@ Los ficheros en lenguaje Python fueron realizados con el editor de textos avanza
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Como se puede apreciar en la tabla~\ref{tab:3}, el error cometido al aplicar la regla de Simpson,
-garantiza, para la función estudiada, una precisión de por lo menos una cifra decimal exacta.
+garantiza, para la función estudiada, una precisión de por lo menos dos cifras exactas.
 Por otro lado, se puede observar en la tabla~\ref{tab:4}, que empleando la regla de Simpson compuesta el error es 
 inversamente proporcional al número de subintervalos, siendo posible reducirlo tanto como se desee.

@@ -58,7 +58,7 @@
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 \begin{frame}
   \frametitle{Índice}  
-  \tableofcontents[pausesections]
+  \tableofcontents
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 
@@ -166,15 +166,12 @@
 
   \begin{block}{Descripci\'on de los experimentos}
     \begin{itemize}
-      \item <1-> Representación gráfica de la función.
-      \pause
-      \item <2-> Cálculo del valor exacto de la integral definida.
-      \pause  
-      \item <3-> Comparación gráfica.
-      \pause
-      \item <4-> Aproximación por la Regla de Simpson.
-      \pause
-      \item <5-> Aproximación por la Regla de Simpson compuesta.
+      \item Representación gráfica de la función.
+      \item Cálculo del valor exacto de la integral definida. 
+      \item Comparación gráfica.
+      \item Aproximación por la Regla de Simpson.
+      \item Cálculo de errores y cifras significativas.
+      \item Aproximación por la Regla de Simpson compuesta.
     \end{itemize}
   \end{block}
 
@@ -245,6 +242,30 @@ print '\nAproximacion por la regla de Simpson: ',aprox
           \end{verbatim}
         \end{footnotesize}
       \end{center}
+  \end{block}
+  
+\end{frame}
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\begin{frame}[fragile]
+
+  \frametitle{Procedimiento experimental}
+  
+  \begin{block}{Cálculo de errores y cifras significativas}
+    \[\text{Error absoluto} = \vert v - v^* \vert\]
+
+    \[\text{Error relativo} = \frac{\vert v - v^* \vert}{\vert v \vert}\]
+    Siendo $t$ el número de dígitos significativos (o cifras exactas):
+    \[\frac{\vert v - v^* \vert}{\vert v \vert} < 5.10^{-t}\] 
+    
+    \begin{center}
+      \begin{footnotesize}
+        \begin{verbatim}
+print '\t\t       Error absoluto: ', abs(F-aprox)
+print '\t\t       Error relativo: ', abs(F-aprox)/abs(F)
+print '\t\tCifras significativas: ', int(-log10((abs(F-aprox)/abs(F))/5))
+        \end{verbatim}
+      \end{footnotesize}
+    \end{center}
   \end{block}
   
 \end{frame}

@@ -1,10 +1,10 @@
 \beamer@endinputifotherversion {3.10pt}
 \select@language {spanish}
-\beamer@sectionintoc {1}{Motivaci\IeC {\'o}n y Objetivos}{6}{0}{1}
-\beamer@sectionintoc {2}{Fundamentos Te\IeC {\'o}ricos}{8}{0}{2}
-\beamer@sectionintoc {3}{Procedimiento experimental}{12}{0}{3}
-\beamer@subsectionintoc {3}{1}{Descripci\IeC {\'o}n de los experimentos}{12}{0}{3}
-\beamer@subsectionintoc {3}{2}{Descripci\IeC {\'o}n del material}{25}{0}{3}
-\beamer@subsectionintoc {3}{3}{Resultados obtenidos}{26}{0}{3}
-\beamer@subsectionintoc {3}{4}{An\IeC {\'a}lisis de los resultados}{27}{0}{3}
-\beamer@sectionintoc {4}{Conclusiones}{28}{0}{4}
+\beamer@sectionintoc {1}{Motivaci\IeC {\'o}n y Objetivos}{3}{0}{1}
+\beamer@sectionintoc {2}{Fundamentos Te\IeC {\'o}ricos}{5}{0}{2}
+\beamer@sectionintoc {3}{Procedimiento experimental}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Descripci\IeC {\'o}n de los experimentos}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Descripci\IeC {\'o}n del material}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Resultados obtenidos}{20}{0}{3}
+\beamer@subsectionintoc {3}{4}{An\IeC {\'a}lisis de los resultados}{21}{0}{3}
+\beamer@sectionintoc {4}{Conclusiones}{22}{0}{4}

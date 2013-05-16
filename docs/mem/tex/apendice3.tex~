@@ -23,17 +23,16 @@
 from simpson import regla_simpson
 from math import *
 
-if __name__ == '__main__':
-  
-  F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
-  print '\nValor real= ',F
+F=(2*3*cos(3)+(3**2-2)*sin(3))-(2*1*cos(1)+(1**2-2)*sin(1))
+print '\nValor real= ',F
 
-  aprox=regla_simpson(lambda x:(x**2*cos(x)),1,3)
-  print '\nAproximacion por la regla de Simpson: ',aprox
+aprox=regla_simpson(lambda x:(x**2*cos(x)),1,3)
+print '\nAproximacion por la regla de Simpson: ',aprox
 
-  print '\t\t      Error absoluto: ', abs(F-aprox)
-  print '\t\t      Error relativo: ', abs(F-aprox)/abs(F)
-  print '\n'
+print '\t\t       Error absoluto: ', abs(F-aprox)
+print '\t\t       Error relativo: ', abs(F-aprox)/abs(F)
+print '\t\tCifras significativas: ', int(-log10((abs(F-aprox)/abs(F))/5))
+print '\n'
 \end{verbatim}
 \end{footnotesize}
 \end{center}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  15 MAY 2013 16:24
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.3.7)  16 MAY 2013 20:02
 entering extended mode
  %&-line parsing enabled.
 **memte.tex
@@ -229,16 +229,19 @@ File: images/grafica1.eps Graphic file (type eps)
 ] [7]
 File: images/grafica2.eps Graphic file (type eps)
  <images/grafica2.eps> [8]
-(./tables/table1.tex [9]) (./tables/table2.tex) (./tables/table3.tex)
-(./tables/table4.tex)) [10]
-Cap\'{\i }tulo 4.
-(./tex/cap4.tex) [11
+[9] (./tables/table1.tex) (./tables/table2.tex) (./tables/table3.tex
+Overfull \hbox (0.61337pt too wide) in paragraph at lines 4--11
+ [] 
+ []
 
-] [12
+) (./tables/table4.tex [10])) [11]
+Cap\'{\i }tulo 4.
+(./tex/cap4.tex) [12
 
 ]
 Ap\'{e}ndice A.
 [13
+
 
 ] (./tex/apendice1.tex [14]) [15] (./tex/apendice2.tex) [16]
 (./tex/apendice3.tex [17]) (./memte.bbl [18]) [19
@@ -251,6 +254,6 @@ Here is how much of TeX's memory you used:
  4958 multiletter control sequences out of 15000+50000
  15986 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 25i,8n,27p,208b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 25i,8n,27p,209b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on memte.dvi (27 pages, 46012 bytes).
+Output written on memte.dvi (27 pages, 47340 bytes).
