@@ -254,7 +254,7 @@ print '\nAproximacion por la regla de Simpson: ',aprox
     \[\text{Error absoluto} = \vert v - v^* \vert\]
 
     \[\text{Error relativo} = \frac{\vert v - v^* \vert}{\vert v \vert}\]
-    Siendo $t$ el número de dígitos significativos (o cifras exactas).
+    Siendo $t$ el número de dígitos significativos (o cifras exactas):
     \[\frac{\vert v - v^* \vert}{\vert v \vert} < 5.10^{-t}\] 
     
     \begin{center}
@@ -369,7 +369,7 @@ for l in n:
   
   \input{tables/table3.tex}
   \input{tables/table4.tex}
-
+  
 \end{frame}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  
 

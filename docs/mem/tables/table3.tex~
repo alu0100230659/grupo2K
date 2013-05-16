@@ -2,9 +2,9 @@
 \begin{table}[h]
   \begin{center}
     \begin{tabular}{|c|c|c|c|c|} \hline 
-      \textbf{Valor exacto} & \textbf{Aproximaci\'on} & \textbf{Error absoluto} & \textbf{Error relativo}& \textbf{C. signific.}\\ 
+      \textbf{V. exacto} & \textbf{Aprox.} & \textbf{E. absoluto} & \textbf{E. relativo}& \textbf{C. signific.}\\ 
       \hline
-      -5.19124855011 & -5.0093265161 & 0.181922034015 & 0.0350439845558 & 
+      -5.1912485501 & -5.0093265161 & 0.1819220340 & 0.0350439846 & 2
       \\
       \hline
     \end{tabular}
